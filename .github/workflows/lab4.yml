@@ -7,31 +7,31 @@ on:
 
 jobs:
  Linux: 
-  runs_on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps: 
-   - uses: actions/checkout@v3
+  - uses: actions/checkout@v3
    
-   - name: Solver
+  - name: Solver
     run: |
      cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
      cmake --build ${{github.workspace}}/solver_application/build
    
-   - name: Hello_world
+  - name: Hello_world
     run: |
      cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
      cmake --build ${{github.workspace}}/hello_world_application/build  
  
  Windows:
-  runs_on: windows-latest
+  runs-on: windows-latest
   steps:
-   - uses: actions/checkout@v3
+  - uses: actions/checkout@v3
     
-   - name: Solver
+  - name: Solver
     run: |
      cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build 
      cmake --build ${{github.workspace}}/solver_application/build 
    
-   - name: Hello_world
+  - name: Hello_world
     run: |
      cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
      cmake --build ${{github.workspace}}/hello_world_application/build  
