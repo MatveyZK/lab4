@@ -9,6 +9,7 @@ jobs:
  Linux:
   
   runs_on: ubuntu-latest
+
   steps: 
    - uses: actions/checkout@v3
    
@@ -16,6 +17,7 @@ jobs:
     run: |
      cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
      cmake --build ${{github.workspace}}/solver_application/build
+   
    - name: Hello_world
     run: |
      cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
@@ -24,6 +26,7 @@ jobs:
  Windows:
   
   runs_on: windows-latest
+  
   steps:
    - uses: actions/checkout@v3
     
@@ -31,6 +34,7 @@ jobs:
     run: |
      cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build 
      cmake --build ${{github.workspace}}/solver_application/build 
+   
    - name: Hello_world
     run: |
      cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
