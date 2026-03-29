@@ -18,7 +18,7 @@ jobs:
    
   - name: Hello_world
     run: |
-     cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
+     cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build 
      cmake --build ${{github.workspace}}/hello_world_application/build  
  
  Windows:
@@ -33,7 +33,7 @@ jobs:
    
   - name: Hello_world
     run: |
-     cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
+     cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build 
      cmake --build ${{github.workspace}}/hello_world_application/build  
 
 
