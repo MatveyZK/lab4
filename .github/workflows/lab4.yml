@@ -9,8 +9,7 @@ jobs:
  Linux:
   
   runs_on: ubuntu-latest
-  steps:
-   
+  steps: 
    - uses: actions/checkout@v3
    
    - name: Solver
@@ -26,7 +25,6 @@ jobs:
   
   runs_on: windows-latest
   steps:
-   
    - uses: actions/checkout@v3
     
    - name: Solver
@@ -37,4 +35,5 @@ jobs:
     run: |
      cmake ${{github.workspace}}/hello_world__application/ -B ${{github.workspace}}/hello_world_application/build 
      cmake --build ${{github.workspace}}/hello_world_application/build  
+
 
