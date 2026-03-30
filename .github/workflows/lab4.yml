@@ -6,8 +6,11 @@ on:
   pull_request: [master]
 
 jobs:
- Linux: 
-  runs-on: ubuntu-latest
+ Build: 
+  runs-on: ${{ matrix.os }}
+  strategy:
+   matrix:
+    os: [ubuntu-latest, windows-latest]
   steps: 
   - uses: actions/checkout@v3
    
@@ -19,21 +22,4 @@ jobs:
   - name: Hello_world
     run: |
      cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build 
-     cmake --build ${{github.workspace}}/hello_world_application/build  
- 
- Windows:
-  runs-on: windows-latest
-  steps:
-  - uses: actions/checkout@v3
-    
-  - name: Solver
-    run: |
-     cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build 
-     cmake --build ${{github.workspace}}/solver_application/build 
-   
-  - name: Hello_world
-    run: |
-     cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build 
-     cmake --build ${{github.workspace}}/hello_world_application/build  
-
-
+     cmake --build ${{github.workspace}}/hello_world_application/build
