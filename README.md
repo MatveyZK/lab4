@@ -65,5 +65,3 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/MatveyZK/lab4
    55338af..08669b0  master -> master
 ```
-В л/р 3 скорее всего нужно было добавить папку build в gitignore, но в инструкции этого не было, поэтому пришлось
-удалить файлы кеша Cmake, чтобы не возникало конфликтов
