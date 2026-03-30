@@ -1,4 +1,0 @@
-/home/matvey/Desktop/lab03/formatter_ex_lib/build/CMakeFiles/formatter.dir
-/home/matvey/Desktop/lab03/formatter_ex_lib/build/CMakeFiles/formatter_ex.dir
-/home/matvey/Desktop/lab03/formatter_ex_lib/build/CMakeFiles/edit_cache.dir
-/home/matvey/Desktop/lab03/formatter_ex_lib/build/CMakeFiles/rebuild_cache.dir

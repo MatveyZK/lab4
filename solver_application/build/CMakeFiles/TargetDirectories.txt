@@ -1,6 +1,0 @@
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/formatter.dir
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/formatter_ex.dir
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/solver.dir
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/equation.dir
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/edit_cache.dir
-/home/matvey/Desktop/lab03/solver_application/build/CMakeFiles/rebuild_cache.dir
