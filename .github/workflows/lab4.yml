@@ -16,10 +16,7 @@ jobs:
    
   - name: Solver
     run: |
-     cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
-     cmake --build ${{github.workspace}}/solver_application/build
-   
-  - name: Hello_world
-    run: |
-     cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build 
-     cmake --build ${{github.workspace}}/hello_world_application/build
+     cmake . -B build/gcc -DCMAKE_CXX_COMPILER=g++
+     cmake --build build/gcc
+     cmake . -B build/clang -DCMAKE_CXX_COMPILER=clang++
+     cmake --build build/clang
